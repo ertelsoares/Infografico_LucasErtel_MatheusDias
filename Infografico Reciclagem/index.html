@@ -1,0 +1,198 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+    
+    <title>Infografico Matheus</title>
+    
+    <meta name="description" content="Infografico sobre o meio ambiente" />
+    <meta name="author" content="Matheus Dias and Lucas Ertel" />
+
+    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon-floresta.png" />
+    
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Alemanha',     61.8],
+          ['Bélgica',      57.6],
+          ['Suiça',  50.5],
+          ['Suécia', 29.2],
+          ['Reino Unido',    26.5]
+        ]);
+
+        var options = {
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+    
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+
+      
+      google.charts.setOnLoadCallback(drawChart);
+
+     
+      function drawChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Sul', 40],
+          ['Nordeste', 10],
+          ['Centro-oeste', 8],
+          ['Norte', 1],
+          ['Suldoeste', 41]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+      </script>
+
+      <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+          [{'v':'First', 'f':'Processo basico de reciclagem<div style="color:red; font-style:italic">(Etapas)</div>'},
+           '', ''],
+          [{'v':'Sec', 'f':'Coleta'},
+           'First', ''],
+          ['Separação', 'Sec', 'Materiais coletados são separados por tipo de material e cor'],
+          ['Empacotamento', 'Separação', 'Aplicado no plastico para compactar o mesmo'],
+          ['Lavagem/Secagem', 'Empacotamento', ''],
+          ['Granulos', 'Lavagem/Secagem', 'O produto é passado por 3 etapas de reprocessamento: Aglutinação, extrusão e resfriamento'],
+          ['Materia prima', 'Granulos', 'Por fim o produto vira materia prima']
+        ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('info'));
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {'allowHtml':true});
+      }
+   </script>
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     
+</head>
+
+<!----------------------------------------------------------------------------------------------------INICIO DO BODY-->    
+    
+    
+<body>
+
+
+<div id="impress">
+
+
+<!----------------------------------------------------------------------------------------------------PRIMEIRO SLIDE--> 
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <p id="initial">RECICLAGEM</p>
+        <p>Uma forma simples de ajudar o planeta.</p>
+        <p id="america"><span>*</span>Mais simples do que alimentar tartarugas com canudos.<span>*</span></p>
+    </div>
+<!----------------------------------------------------------------------------------------------------PRIMEIRO SLIDE-->
+
+  
+    
+ <!----------------------------------------------------------------------------------------------------SEGUNDO SLIDE-->    
+    <div id="secondo" class="step slide" data-x="0" data-y="-1500">
+        <p>"We all have a part to do to ensure a brighter future. Remember, the power is yours!"</p>
+        <p id="planeta">Planeta, capitão.</p>
+    </div>
+<!----------------------------------------------------------------------------------------------------SEGUNDO SLIDE-->     
+    
+
+    
+<!----------------------------------------------------------------------------------------------------TERCEIRO SLIDE-->     
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <p id="graph">Países campeões de reciclagem no planeta, juntamente com a porcentagem de lixo reciclado de cada país. <a href="https://www.hypeness.com.br/2018/07/07-paises-do-mundial-que-ja-sao-campeoes-em-reciclagem/" target="_blank">FONTE</a></p>
+        <div id="donutchart" style="width: 900px; height: 500px;"></div>
+    </div>
+<!----------------------------------------------------------------------------------------------------TERCEIRO SLIDE-->     
+    
+
+
+<!----------------------------------------------------------------------------------------------------QUARTO SLIDE-->     
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <p id="graph">Regionalização dos municípios com coleta seletiva no Brasil.<a href="http://cempre.org.br/ciclosoft/id/8" target="_blank">FONTE</a></p>
+        <div id="chart_div" style="width: 900px; height: 500px;"></div>
+    </div>
+<!----------------------------------------------------------------------------------------------------QUARTO SLIDE-->
+    
+
+    
+<!----------------------------------------------------------------------------------------------------QUINTO SLIDE-->
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>Por que reciclar?</p>
+        <ul>
+            <li>Economia e prevenção.</li>
+        </ul>
+        
+        <script>
+$( "li" ).hover(
+  function() {
+    $( this ).append( $( "<span>E salvar as tartarugas dos canudos.</span>" ) );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
+ 
+$( "li.fade" ).hover(function() {
+  $( this ).fadeOut( 100 );
+  $( this ).fadeIn( 500 );
+});
+</script>
+    </div>
+<!----------------------------------------------------------------------------------------------------QUINTO SLIDE-->    
+    
+
+    
+<!----------------------------------------------------------------------------------------------------SEXTO SLIDE-->    
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p id="inspira">Conheça o projeto Tooreciclando, clicando <a href="https://www.toledo.pr.gov.br/tooreciclando/" target="_blank">Aqui</a></p>
+    </div>
+<!----------------------------------------------------------------------------------------------------SEXTO SLIDE-->    
+    
+
+    
+<!----------------------------------------------------------------------------------------------------SETIMO SLIDE-->    
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+         <div id="info" style="width: 500px; height: 500px;"></div>
+    </div>
+<!----------------------------------------------------------------------------------------------------SETIMO SLIDE-->
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    </div>
+
+</div>
+
+<div id="impress-toolbar"></div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

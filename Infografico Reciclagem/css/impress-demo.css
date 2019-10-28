@@ -1,0 +1,311 @@
+/*--------------------------------------------------------------------BASIC--------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/*--------------------------------------------------------------------BODY--------------------------------------------------------------------*/
+
+
+body {
+    font-family: 'Macondo Swash Caps', cursive;
+    min-height: 740px;
+
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+}
+
+
+/*--------------------------------------------------------------------LINKS--------------------------------------------------------------------*/
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+
+    -webkit-transition: 0.5s;  /* -webkit- para chrome e safari */
+    -moz-transition:    0.5s;  /* -moz- mozilla */
+    -ms-transition:     0.5s;  /* pesquisar */ 
+    -o-transition:      0.5s;  /* -o- opera */
+    transition:         0.5s;
+}
+
+a:hover,
+a:focus {
+    background: rgba(255,255,255,1);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+
+
+/*--------------------------------------------------------------------CONFIG BASICA DOS SLIDES 1 2 3--------------------------------------------------------------------*/
+.step {
+    position: absolute;
+    width: 900px;
+    padding: 0px;
+    margin: 0px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-size: 75px;
+    line-height: 1.5;
+    
+   
+}
+
+#initial {
+    color: darkgreen;
+}
+
+#america {
+    font-size: 20px;
+}
+
+#bored {
+      width: 700px;
+    padding-bottom: 300px;
+
+    /* Mind Diver http://pixeljoint.com/pixelart/30406.htm?sec=rating */
+    background-image: url(http://pixeljoint.com/files/icons/minddiver3b.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+#graph {
+    font-size: 20px;
+}
+
+#secondo {
+    font-size: 35px;
+    
+     width: 700px;
+    padding-bottom: 300px;
+
+    /* AT&T Recycles Turner For Earth Day With Captain Planet https://www.broadcastingcable.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_300/MTYzNTIxMTIyNDM0ODE5MjQz/captain-planet-cp-fly-by-01.webp */
+    background-image: url(https://www.broadcastingcable.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_300/MTYzNTIxMTIyNDM0ODE5MjQz/captain-planet-cp-fly-by-01.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#planeta{
+    font-size: 20px;
+}
+
+
+/*--------------------------------------------------------------------OPACIDADE DOS STEPS NÃO UTILIZADOS--------------------------------------------------------------------*/
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+
+/*--------------------------------------------------------------------SLIDE CLASS TITLE--------------------------------------------------------------------*/
+#title {
+    padding: 0;
+    font-size: 40px;
+    
+    width: 700px;
+    padding-bottom: 300px;
+}
+
+#renove {
+    font-size: 85px;
+}
+
+
+/*--------------------------------------------------------------------SLIDE CLASS ITS--------------------------------------------------------------------*/
+
+#its {
+    font-size: 45px;
+}
+
+/*--------------------------------------------------------------------SLIDE CLASS BIG--------------------------------------------------------------------*/
+#big {
+    
+    width: 700px;
+    padding-bottom: 300px;
+
+    
+    background-image: url(https://www.toledo.pr.gov.br/tooreciclando/images/tab-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 700px;
+}
+
+#inspira {
+    font-size: 40px;
+    margin-bottom: 250px;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------------SLIDE CLASS TINY--------------------------------------------------------------------*/
+#tiny {
+    font-size: 40px;
+    margin-bottom: 250px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------SLIDE CLASS ING--------------------------------------------------------------------*/
+#ing { width: 500px }
+
+#teste {
+    font-size: 40px;
+    margin-bottom: 250px;
+    
+    
+    background-image: url();
+    background-position:bottom right;
+    background-repeat: no-repeat;
+}
+
+#ing b {
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+
+#ing.present .positioning {
+    -webkit-transform: translateY(-10px);
+    -moz-transform:    translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    -o-transform:      translateY(-10px);
+    transform:         translateY(-10px);
+}
+
+#teste .rotating {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform:    rotate(-100deg);
+    -ms-transform:     rotate(-360deg);
+    -o-transform:      rotate(-100deg);
+    transform:         rotate(-360deg);
+
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay:    0.25s;
+    -ms-transition-delay:     0.25s;
+    -o-transition-delay:      0.25s;
+    transition-delay:           1s;
+}
+
+
+#ing.present .scaling {
+    -webkit-transform: scale(0.7);
+    -moz-transform:    scale(0.7);
+    -ms-transform:     scale(0.7);
+    -o-transform:      scale(0.7);
+    transform:         scale(0.7);
+
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
+}
+
+
+/*--------------------------------------------------------------------SLIDE CLASS IMAGINATION--------------------------------------------------------------------*/
+#imagination {
+    width: 600px;
+}
+
+#imagination .imagination {
+    font-size: 78px;
+}
+
+
+/*--------------------------------------------------------------------SLIDE CLASS SOURCE--------------------------------------------------------------------*/
+#source {
+    width: 700px;
+    padding-bottom: 300px;
+
+    /* Yoda Icon :: Pixel Art from Star Wars http://www.pixeljoint.com/pixelart/1423.htm */
+    background-image: url();
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+/*--------------------------------------------------------------------SLIDE CLASS SOURCE--------------------------------------------------------------------*/
+#its-in-3d {
+     width: 700px;
+    padding-bottom: 300px;
+
+    /* Yoda Icon :: Pixel Art from Star Wars http://www.pixeljoint.com/pixelart/1423.htm */
+    background-image: url();
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+/*--------------------------------------------------------------------OVERVIEW--------------------------------------------------------------------*/
+#overview { display: none }
+
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/*--------------------------------------------------------------------BARRA DE NAVEGATION--------------------------------------------------------------------*/
+.impress-enabled div#impress-toolbar {
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0.6;
+}
+.impress-enabled div#impress-toolbar > span {
+    margin-right: 10px;
+}
+
+
+body.impress-mouse-timeout div#impress-toolbar {
+    display: none;
+}
+
+
+body.impress-mouse-timeout {
+    cursor: none;
+}
